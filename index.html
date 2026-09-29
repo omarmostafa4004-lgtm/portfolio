@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Amr Mostafa Abdelbaky — Data Scientist portfolio">
+<title>Amr Mostafa Abdelbaky | Data Scientist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0f12;--surface:#15181d;--surface2:#1b1f25;--text:#f1f3f5;--muted:#a8adb5;--line:#30353d;--accent:#cbd0d6;--accent2:#8d949d;--max:1160px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}a{color:inherit;text-decoration:none}.container{width:min(92%,var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(13,15,18,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;font-size:1.1rem;letter-spacing:.08em}.links{display:flex;gap:25px;color:var(--muted);font-size:.88rem}.links a:hover{color:#fff}
+.hero{min-height:calc(100vh - 72px);display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;padding:80px 0}.eyebrow{color:var(--muted);font-weight:600;margin-bottom:12px}.hero h1{font-size:clamp(2.8rem,7vw,5.5rem);line-height:1.02;letter-spacing:-.055em;margin-bottom:20px}.hero h1 span{color:#9da4ac}.hero h2{font-size:clamp(1.05rem,2vw,1.4rem);color:#d5d9de;margin-bottom:18px}.hero p{color:var(--muted);max-width:680px;font-size:1.04rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 19px;border:1px solid #555c65;border-radius:10px;font-weight:600;font-size:.9rem}.btn.primary{background:#e8eaed;color:#101216;border-color:#e8eaed}.btn:hover{transform:translateY(-2px)}
+.photo-wrap{display:flex;justify-content:center}.photo{width:min(390px,80vw);aspect-ratio:1;border-radius:50%;border:1px solid #4a5058;background:radial-gradient(circle at 50% 35%,#343a42,#181b20 63%,#101216);display:grid;place-items:center;box-shadow:0 25px 80px rgba(0,0,0,.45)}.photo span{font-size:6rem;font-weight:800;color:#d8dce0;letter-spacing:-.08em}.photo small{position:absolute;margin-top:220px;color:#8f969e}
+section{padding:92px 0;border-top:1px solid var(--line)}.section-head{margin-bottom:38px}.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:#858c95;font-weight:700}.section-head h2{font-size:2.35rem;letter-spacing:-.04em;margin-top:7px}.section-head p{color:var(--muted);margin-top:8px}
+.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px}.about-text p{color:#c1c6cc;margin-bottom:16px}.specialties{display:grid;gap:12px}.specialty{padding:18px 20px;background:var(--surface);border:1px solid var(--line);border-radius:12px}.specialty strong{display:block}.specialty span{color:var(--muted);font-size:.86rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.stat{padding:25px;background:var(--surface);border:1px solid var(--line);border-radius:14px}.stat b{font-size:2.2rem;display:block}.stat span{color:var(--muted);font-size:.9rem}.analytics-note{color:var(--muted);margin-bottom:22px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:25px}.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:.93rem}.taglist{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{font-size:.75rem;padding:6px 9px;border:1px solid #3a4048;border-radius:7px;color:#b9bec5}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:18px}.service{padding:25px;border:1px solid var(--line);background:var(--surface);border-radius:14px}.service h3{margin-bottom:8px}.service p{color:var(--muted)}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:20px}.skillbox{padding:25px;background:var(--surface);border:1px solid var(--line);border-radius:14px}.skillbox h3{margin-bottom:16px}.skillbox .taglist{margin-top:0}
+.project{display:flex;flex-direction:column;justify-content:space-between;min-height:225px}.project-num{color:#777f88;font-size:.8rem;margin-bottom:12px}.project a{display:inline-block;margin-top:20px;color:#d9dde1;font-weight:600}
+.achievements{display:grid;grid-template-columns:1fr 1fr;gap:18px}.achievement{padding:25px;border-left:2px solid #777f88;background:var(--surface)}.achievement p{color:var(--muted);margin-top:6px}
+.timeline{display:grid;gap:16px}.role{padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:14px}.role-top{display:flex;justify-content:space-between;gap:20px}.role .date{color:#7f8790;font-size:.85rem}.role ul{margin:12px 0 0 20px;color:var(--muted)}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px}.contact-list{display:grid;gap:14px}.contact-item{padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}.contact-item small{display:block;color:#7f8790;text-transform:uppercase;letter-spacing:.12em;font-size:.68rem}.contact-item a{color:#e0e3e6}.form{display:grid;gap:12px}.form input,.form textarea{width:100%;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;color:#fff;font:inherit}.form textarea{min-height:150px;resize:vertical}
+footer{padding:35px 0;border-top:1px solid var(--line);color:#858c95;font-size:.85rem}footer .foot{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){.links{display:none}.hero,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:65px 0}.photo-wrap{order:-1}.cards,.services,.skills,.achievements{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}.role-top{display:block}.hero h1{font-size:3.25rem}}
+@media(max-width:520px){.stats{grid-template-columns:1fr}.stats .stat{display:flex;align-items:center;gap:15px}.stats b{font-size:1.8rem}.photo{width:280px}.photo span{font-size:4.5rem}}
+</style>
+</head>
+<body>
+<nav><div class="container nav"><a class="logo" href="#home">AM.</a><div class="links">
+<a href="#home">Home</a><a href="#about">About</a><a href="#analytics">Analytics</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
+
+<main>
+<section id="home" class="container hero">
+<div><div class="eyebrow">👋 Welcome, I'm</div><h1>Amr Mostafa<br><span>Abdelbaky</span></h1>
+<h2>Data Scientist · Data Visualization · SQL</h2>
+<p>Transforming raw data into predictive models and actionable business insights through advanced analytics, machine learning, and interactive dashboards</p>
+<div class="actions"><a class="btn primary" href="#projects">View Projects</a><a class="btn" href="#contact">Contact Me</a><a class="btn" href="https://www.linkedin.com/in/amrmostafa8" target="_blank" rel="noopener">LinkedIn</a></div></div>
+<div class="photo-wrap"><div class="photo" aria-label="Profile photo placeholder"><span>AM</span><small>Replace with your profile photo</small></div></div>
+</section>
+
+<section id="about"><div class="container"><div class="section-head"><div class="kicker">About</div><h2>About Me</h2></div>
+<div class="about-grid"><div class="about-text"><p>I am Amr Mustafa Abdulbaqi, a Data Scientist with experience in Machine Learning, Excel, SQL, and Python.</p><p>I specialize in transforming raw data into actionable insights through data processing, exploratory analysis, machine learning modeling, and interactive dashboards.</p><p>I have worked on projects involving database extraction using SQL, and data analysis.</p><p>At DEPI, I combine technical expertise with strong communication and leadership skills to deliver machine learning model development using Python.</p></div>
+<div><h3 style="margin-bottom:15px">Specialties</h3><div class="specialties"><div class="specialty"><strong>Data Cleaning &amp; Analysis</strong></div><div class="specialty"><strong>Data Visualization &amp; Dashboards</strong></div><div class="specialty"><strong>Machine Learning Models</strong></div></div></div></div></div></section>
+
+<section id="analytics"><div class="container"><div class="section-head"><div class="kicker">Interactive Analytics</div><h2>Profile Dashboard</h2><p>Key professional indicators, presented in the same dashboard-style spirit as the reference portfolio.</p></div>
+<div class="stats"><div class="stat"><b>+3</b><span>Projects Completed</span></div><div class="stat"><b>+3</b><span>Professional Certifications</span></div><div class="stat"><b>+6</b><span>Technologies Mastered</span></div></div></div></section>
+
+<section id="services"><div class="container"><div class="section-head"><div class="kicker">Services</div><h2>My Services</h2></div><div class="services">
+<div class="service"><h3>Data Cleaning</h3><p>Preparing, cleaning, transforming, and structuring raw datasets for reliable analysis.</p></div>
+<div class="service"><h3>Data Analysis</h3><p>Data Analysis, Data Visualization, Statistical Analysis, and Machine Learning Models.</p></div>
+</div></div></section>
+
+<section id="skills"><div class="container"><div class="section-head"><div class="kicker">Skills</div><h2>Technical &amp; Soft Skills</h2></div><div class="skills">
+<div class="skillbox"><h3>Technical Skills</h3><div class="taglist"><span class="tag">Excel</span><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Data Cleaning</span><span class="tag">Data Analysis</span><span class="tag">Statistical Analysis</span></div></div>
+<div class="skillbox"><h3>Soft Skills</h3><div class="taglist"><span class="tag">Communication</span><span class="tag">Time Management</span><span class="tag">Problem Solving</span><span class="tag">Teamwork</span><span class="tag">Critical Thinking</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="container"><div class="section-head"><div class="kicker">Projects</div><h2>Featured Projects</h2></div><div class="cards">
+<div class="card project"><div><div class="project-num">PROJECT 01</div><h3>Employee Management System with Python and OOP</h3><p>A Python-based employee management system applying object-oriented programming principles to organize employee records and operations.</p><div class="taglist"><span class="tag">Python</span><span class="tag">OOP</span></div></div></div>
+<div class="card project"><div><div class="project-num">PROJECT 02</div><h3>College Management System with Java and OOP</h3><p>A Java-based college management system designed around object-oriented programming to manage college entities and workflows.</p><div class="taglist"><span class="tag">Java</span><span class="tag">OOP</span></div></div></div>
+</div></div></section>
+
+<section id="achievements"><div class="container"><div class="section-head"><div class="kicker">Achievements</div><h2>My Achievements</h2></div><div class="achievements">
+<div class="achievement"><h3>Python, SQL, and Excel Products</h3><p>Projects and practical products built using Python, SQL, and Excel.</p></div>
+<div class="achievement"><h3>Freelance Data Scientist</h3><p>Delivering data science and machine-learning solutions for freelance projects.</p></div>
+</div></div></section>
+
+<section id="experience"><div class="container"><div class="section-head"><div class="kicker">Experience</div><h2>My Experience</h2></div><div class="timeline">
+<div class="role"><div class="role-top"><h3>Trainee Data Scientist</h3><span class="date">DEPI</span></div><ul><li>Develop machine learning models using Python.</li><li>Work with data processing, analysis, and modeling workflows.</li></ul></div>
+<div class="role"><div class="role-top"><h3>Freelance Data Scientist</h3><span class="date">Independent</span></div><ul><li>Develop data-driven solutions and machine learning models.</li><li>Apply Python, SQL, Excel, and analytical techniques to project requirements.</li></ul></div>
+</div></div></section>
+
+<section id="contact"><div class="container"><div class="section-head"><div class="kicker">Contact</div><h2>Get In Touch</h2><p>Let's talk about your next data science project.</p></div><div class="contact-grid">
+<div class="contact-list"><div class="contact-item"><small>Email</small><a href="mailto:omarmostafa4004@gmail.com">omarmostafa4004@gmail.com</a></div>
+<div class="contact-item"><small>Phone</small><a href="tel:+201115820171">01115820171</a></div>
+<div class="contact-item"><small>LinkedIn</small><a href="https://www.linkedin.com/in/amrmostafa8" target="_blank" rel="noopener">linkedin.com/in/amrmostafa8</a></div></div>
+<form class="form" action="mailto:omarmostafa4004@gmail.com" method="post" enctype="text/plain"><input required name="name" placeholder="Name"><input required type="email" name="email" placeholder="Email"><input name="subject" placeholder="Subject"><textarea required name="message" placeholder="Message"></textarea><button class="btn primary" type="submit">Send Message</button></form>
+</div></div></section>
+</main>
+<footer><div class="container foot"><span>© 2026 Amr Mostafa Abdelbaky. All Rights Reserved.</span><span>Data Scientist · Data Visualization · SQL</span></div></footer>
+</body></html>
